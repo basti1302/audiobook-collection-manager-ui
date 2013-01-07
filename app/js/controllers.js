@@ -2,11 +2,15 @@
 
 /* Controllers */
 
-
-function MyCtrl1() {}
-MyCtrl1.$inject = [];
-
-
-function MyCtrl2() {
+function ListController($scope, DataService) {
+  $scope.audiobooks = DataService.query();
 }
-MyCtrl2.$inject = [];
+// ListController.$inject = [];
+
+
+function DetailsController($scope, $routeParams, DataService) {
+  $scope.audiobook = DataService.get({audiobookId: $routeParams.audiobookId}, function(audiobook) {
+    // ...
+  });
+}
+// DetailsController.$inject = [];

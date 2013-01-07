@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Man In The Dark",
+    "author":       {"last_name": "Auster", "first_name": "Paul"},
+    "voice_artist": {"last_name": "Auster", "first_name": "Paul"},
+    "language": "English"
+  },    
+  {
+    "id": 2,
+    "title": "Coraline",
+    "author":       {"last_name": "Gaiman", "first_name": "Neil"},
+    "voice_artist": {"last_name": "Gaiman", "first_name": "Neil"},
+    "language": "English"
+  },
+  {
+    "id": 3,
+    "title": "Siddhartha",
+    "author":       {"last_name": "Hesse",   "first_name": "Herman"},
+    "voice_artist": {"last_name": "Langton", "first_name": "James"},
+    "language": "English"
+  },
+  {
+    "id": 4,
+    "title": "Das Schloss",
+    "author":       {"last_name": "Kafka",   "first_name": "Franz"},
+    "voice_artist": {"last_name": "Matthes", "first_name": "Ulrich"},
+    "language": "German"
+  },
+  {
+    "id": 5,
+    "title": "Ein Hungerk\u00FCnstler",
+    "author":       {"last_name": "Kafka", "first_name": "Franz"},
+    "voice_artist": {"last_name": "Bach",  "first_name": "Dirk"},
+    "language": "German"
+  }
+]

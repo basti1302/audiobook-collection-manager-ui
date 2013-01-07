@@ -1,0 +1,28 @@
+<!--
+<img ng-src="{{imageUrl}}">
+TODO: Import image from amazon.
+-->
+
+<h1>{{audiobook.title}}</h1>
+
+<p>by {{audiobook.author.first_name + ' ' + audiobook.author.last_name}}</p>
+<p>read by {{audiobook.author.first_name + ' ' + audiobook.author.last_name}}</p>
+
+<dl>
+  <dt>Publisher:</dt>
+  <dd>{{audiobook.publisher}}</dd>
+  <dt>Publication Date:</dt>
+  <dd>{{audiobook.publication_date}}</dd>
+  <dt>Language:</dt>
+  <dd>{{audiobook.language}}</dd>
+  <dt>ASIN:</dt>
+  <dd>{{audiobook.asin}}</dd>
+  <dt>ISBN-10:</dt>
+  <dd>{{audiobook.isbn_10}}</dd>
+  <dt>ISBN-13:</dt>
+  <dd>{{audiobook.isbn_13}}</dd>
+</dl>
+
+<p>{{audiobook.description}}</p>
+
+<a href="#/audiobooks">Back to list</a>

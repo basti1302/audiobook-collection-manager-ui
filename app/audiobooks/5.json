@@ -1,0 +1,7 @@
+{
+  "id": 5,
+  "title": "Ein Hungerk\u00FCnstler",
+  "author":       {"last_name": "Kafka", "first_name": "Franz"},
+  "voice_artist": {"last_name": "Bach",  "first_name": "Dirk"},
+  "language": "German"
+}
