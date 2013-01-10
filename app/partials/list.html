@@ -1,18 +1,42 @@
-<p><h1>List of Audiobooks</h1></p>
+<div class="row">
+  <div class="span12">
+    <form class="form-search">
+      <!-- TODO We always fetch the whole list from the backend, no matter what - that's kinda stupid -->
+      <label><span class="label">Filter:</span></label>
+      <input type="text" placeholder="Search for audiobooks…" class="input-xlarge search-query" ng-model="query"/>
+      <!-- TODO The search button never does anything because we always filter instantly on the client side - that's even more stupid -->
+      <button type="submit" class="btn">Search <i class="icon-search" ></i></button>
+      <a href="#/audiobooks/new" class="btn">Add Audiobook  <i class="icon-plus"></i></a>
+    </form>
+  </div>
+</div>
 
-<table class="table table-bordered table-striped table-hover">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Author</th>
-      <th>Title</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr ng-repeat="audiobook in audiobooks">
-      <td><a href="#/audiobooks/{{audiobook.id}}">{{audiobook.id}}</a></td>
-      <td><a href="#/audiobooks/{{audiobook.id}}">{{audiobook.author.last_name + ', ' + audiobook.author.first_name}}</a></td>
-      <td><a href="#/audiobooks/{{audiobook.id}}">{{audiobook.title}}</a></td>
-    </tr>
-  </tbody>
-</table>
+<div class="row">
+  <div class="span12">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <!-- <th>ID</th> -->
+          <th><a href ng-click="setOrderBy('title')">Title <i ng-class="getOrderStyleClass('title')"/></a></th>
+          <th><a href ng-click="setOrderBy('author.last_name')">Author <i ng-class="getOrderStyleClass('author.last_name')"/></a></th>
+          <th><a href ng-click="setOrderBy('voice_artist.last_name')">Voice Artist <i ng-class="getOrderStyleClass('voice_artist.last_name')"/></a></th>
+          <th><a href ng-click="setOrderBy('language')">Language <i ng-class="getOrderStyleClass('language')"/></a></th>
+          <th style="width: 80px"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="audiobook in audiobooks | orderBy: getOrderBy() | filter:query">
+          <!-- <td><a ng-href="#/audiobooks/{{audiobook.nstore_key}}">{{audiobook.nstore_key}}</a></td> -->
+          <td><a ng-href="#/audiobooks/{{audiobook.nstore_key}}">{{audiobook.title}}</a></td>
+          <td>{{audiobook.author | person}}</td>
+          <td>{{audiobook.voice_artist | person}}</td>
+          <td>{{audiobook.language}}</td>
+          <td><div class="btn-group">
+            <a class="btn btn-small" ng-href="#/audiobooks/{{audiobook.nstore_key}}/edit"><i class="icon-pencil"></i></a>
+            <button class="btn btn-small" ng-click="delete(audiobook)"><i class="icon-remove"></i></button>
+          </div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

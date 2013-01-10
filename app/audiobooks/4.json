@@ -3,5 +3,6 @@
   "title": "Das Schloss",
   "author":       {"last_name": "Kafka",   "first_name": "Franz"},
   "voice_artist": {"last_name": "Matthes", "first_name": "Ulrich"},
-  "language": "German"
+  "language": "German",
+  "asin": "3829120796"
 }

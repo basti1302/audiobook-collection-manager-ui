@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="span8">
+    <h1>Edit Audiobook</h1>
+    <form>
+      <fieldset>
+        <legend></legend>
+        <label>Title</label>
+        <input type="text" class="input-block-level" ng-model="audiobook.title">
+
+        <legend>Author</legend>
+        <label>First Name</label>
+        <input type="text" class="input-block-level" ng-model="audiobook.author.first_name">
+        <label>Last Name</label>
+        <input type="text" class="input-block-level" ng-model="audiobook.author.last_name">
+
+        <legend>Voice Artist</legend>
+        <label>First Name</label>
+        <input type="text" class="input-block-level" ng-model="audiobook.voice_artist.first_name">
+        <label>Last Name</label>
+        <input type="text" class="input-block-level" ng-model="audiobook.voice_artist.last_name">
+
+        <legend>Description</legend>
+        <textarea rows="10" class="input-block-level" ng-model="audiobook.description"></textarea>
+
+        <legend>Metadata</legend>
+        <label>Publisher</label>
+        <input type="text" class="input-block-level" ng-model="audiobook.publisher">
+        <label>Publication Date</label>
+        <input type="text" class="input-block-level" ng-model="audiobook.publication_date">
+        <label>Language</label>
+        <input type="text" class="input-block-level" ng-model="audiobook.language">
+        <label>ISBN-10</label>
+        <input type="text" class="input-block-level" ng-model="audiobook.isbn_10">
+        <label>ISBN-13</label>
+        <input type="text" class="input-block-level" ng-model="audiobook.isbn_13">
+        <label>ASIN</label>
+        <input type="text" class="input-block-level" ng-model="audiobook.asin">
+
+        <p/>
+
+        <button type="submit" style="width: 25%" class="btn btn-large btn-primary" ng-click="update(audiobook)">Save</button>
+        <a ng-href="#/audiobooks/{{audiobook.nstore_key}}" style="width: 25%" class="btn btn-large">Cancel</a>
+      </fieldset>
+    </form>
+  </div>
+</div>
