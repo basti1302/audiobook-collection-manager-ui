@@ -2,8 +2,8 @@
   <div class="span12">
     <form class="form-search">
       <!-- TODO We always fetch the whole list from the backend, no matter what - that's kinda stupid -->
-      <label><span class="label">Filter:</span></label>
-      <input type="text" placeholder="Search for audiobooks…" class="input-xlarge search-query" ng-model="query"/>
+      <label><span class="label" for="filter">Filter:</span></label>
+      <input id="filter" type="text" placeholder="Search for audiobooks…" class="input-xlarge search-query" ng-model="query"/>
       <!-- TODO The search button never does anything because we always filter instantly on the client side - that's even more stupid -->
       <button type="submit" class="btn">Search <i class="icon-search" ></i></button>
       <a href="#/audiobooks/new" class="btn">Add Audiobook  <i class="icon-plus"></i></a>
@@ -13,10 +13,9 @@
 
 <div class="row">
   <div class="span12">
-    <table class="table table-striped table-hover">
+    <table id="list_audiobooks" class="table table-striped table-hover">
       <thead>
         <tr>
-          <!-- <th>ID</th> -->
           <th><a href ng-click="setOrderBy('title')">Title <i ng-class="getOrderStyleClass('title')"/></a></th>
           <th><a href ng-click="setOrderBy('author.last_name')">Author <i ng-class="getOrderStyleClass('author.last_name')"/></a></th>
           <th><a href ng-click="setOrderBy('voice_artist.last_name')">Voice Artist <i ng-class="getOrderStyleClass('voice_artist.last_name')"/></a></th>
@@ -26,7 +25,6 @@
       </thead>
       <tbody>
         <tr ng-repeat="audiobook in audiobooks | orderBy: getOrderBy() | filter:query">
-          <!-- <td><a ng-href="#/audiobooks/{{audiobook.nstore_key}}">{{audiobook.nstore_key}}</a></td> -->
           <td><a ng-href="#/audiobooks/{{audiobook.nstore_key}}">{{audiobook.title}}</a></td>
           <td>{{audiobook.author | person}}</td>
           <td>{{audiobook.voice_artist | person}}</td>
