@@ -72,7 +72,7 @@ function AddController($scope, $location, Audiobook) {
   $scope.create = function() {
     Audiobook.save($scope.audiobook)
     console.log("successfully created new audiobook")
-    $location.path("/audiobooks")
+    $location.path('/audiobooks')
   }
 }
 // AddController.$inject = []

@@ -5,39 +5,39 @@
       <fieldset>
         <legend></legend>
         <label>Title</label>
-        <input type="text" class="input-block-level" ng-model="audiobook.title">
+        <input id="title" type="text" class="input-block-level" ng-model="audiobook.title">
 
         <legend>Author</legend>
         <label>First Name</label>
-        <input type="text" class="input-block-level" ng-model="audiobook.author.first_name">
+        <input id="author_first_name" type="text" class="input-block-level" ng-model="audiobook.author.first_name">
         <label>Last Name</label>
-        <input type="text" class="input-block-level" ng-model="audiobook.author.last_name">
+        <input id="author_last_name" type="text" class="input-block-level" ng-model="audiobook.author.last_name">
 
         <legend>Voice Artist</legend>
         <label>First Name</label>
-        <input type="text" class="input-block-level" ng-model="audiobook.voice_artist.first_name">
+        <input id="voice_artist_first_name" type="text" class="input-block-level" ng-model="audiobook.voice_artist.first_name">
         <label>Last Name</label>
-        <input type="text" class="input-block-level" ng-model="audiobook.voice_artist.last_name">
+        <input id="voice_artist_last_name" type="text" class="input-block-level" ng-model="audiobook.voice_artist.last_name">
 
         <legend>Description</legend>
-        <textarea rows="10" class="input-block-level" ng-model="audiobook.description"></textarea>
+        <textarea id="description" tows="10" class="input-block-level" ng-model="audiobook.description"></textarea>
 
         <legend>Metadata</legend>
         <label>Publisher</label>
-        <input type="text" class="input-block-level" ng-model="audiobook.publisher">
+        <input id="publisher" type="text" class="input-block-level" ng-model="audiobook.publisher">
         <label>Publication Date</label>
-        <input type="text" class="input-block-level" ng-model="audiobook.publication_date">
+        <input id="publication_date" type="text" class="input-block-level" ng-model="audiobook.publication_date">
         <label>Language</label>
-        <input type="text" class="input-block-level" ng-model="audiobook.language">
+        <input id="language" type="text" class="input-block-level" ng-model="audiobook.language">
         <label>ISBN-10</label>
-        <input type="text" class="input-block-level" ng-model="audiobook.isbn_10">
+        <input id="isbn_10" type="text" class="input-block-level" ng-model="audiobook.isbn_10">
         <label>ISBN-13</label>
-        <input type="text" class="input-block-level" ng-model="audiobook.isbn_13">
+        <input id="isbn_13" type="text" class="input-block-level" ng-model="audiobook.isbn_13">
         <label>ASIN</label>
-        <input type="text" class="input-block-level" ng-model="audiobook.asin">
+        <input id="asin" type="text" class="input-block-level" ng-model="audiobook.asin">
 
         <p>
-        <button type="submit" style="width: 25%"  class="btn btn-large btn-primary" ng-click="create(audiobook)">Create</button>
+        <button id="create" type="submit" style="width: 25%"  class="btn btn-large btn-primary" ng-click="create(audiobook)">Create</button>
         <a href="#/audiobooks" style="width: 25%" class="btn btn-large">Cancel</a>
       </fieldset>
     </form>
