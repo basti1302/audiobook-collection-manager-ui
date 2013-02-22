@@ -6,13 +6,13 @@ Commit audiobooks.db with some test data
 =====
 
 Clone audiobook-collection-manager-ui
-Clone nstore-rest-server
+Clone storra
 
 install node:
 Windows: Go to http://nodejs.org/ and click the big green install button
 Linux/Mac: Check https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
 
-cd nstore-rest-server
+cd storra
 node index.js
 
 --> 10 Jan 17:10:25 - [I] now listening on port 8888...

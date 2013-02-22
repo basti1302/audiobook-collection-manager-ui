@@ -25,12 +25,12 @@
       </thead>
       <tbody>
         <tr ng-repeat="audiobook in audiobooks | orderBy: getOrderBy() | filter:query">
-          <td><a ng-href="#/audiobooks/{{audiobook.nstore_key}}">{{audiobook.title}}</a></td>
+          <td><a ng-href="#/audiobooks/{{audiobook.storra_key}}">{{audiobook.title}}</a></td>
           <td>{{audiobook.author | person}}</td>
           <td>{{audiobook.voice_artist | person}}</td>
           <td>{{audiobook.language}}</td>
           <td><div class="btn-group">
-            <a class="btn btn-small" ng-href="#/audiobooks/{{audiobook.nstore_key}}/edit"><i class="icon-pencil"></i></a>
+            <a class="btn btn-small" ng-href="#/audiobooks/{{audiobook.storra_key}}/edit"><i class="icon-pencil"></i></a>
             <button class="btn btn-small" ng-click="delete(audiobook)"><i class="icon-remove"></i></button>
           </div></td>
         </tr>

@@ -9,11 +9,11 @@ angular.module('aboco.services', ['ngResource']).factory('Audiobook', function($
   )
 
   Audiobook.prototype.update = function(success, error) {
-    Audiobook.update({audiobookId: this.nstore_key}, this, success, error)
+    Audiobook.update({audiobookId: this.storra_key}, this, success, error)
   }
 
   Audiobook.prototype.delete = function(success, error) {
-    Audiobook.remove({audiobookId: this.nstore_key}, success, error)
+    Audiobook.remove({audiobookId: this.storra_key}, success, error)
   }
 
   return Audiobook

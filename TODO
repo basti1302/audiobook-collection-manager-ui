@@ -1,0 +1,2 @@
+make edit and display details failsafe:
+  currently, when the backend says 404 (or any other error) the partial is shown without data. that sucks.
