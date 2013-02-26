@@ -4,7 +4,7 @@
 
 angular.module('aboco.services', ['ngResource']).factory('Audiobook', function($resource) {
 
-  var Audiobook = $resource('http://localhost\\:8888/audiobooks/:audiobookId', {},
+  var Audiobook = $resource('http://localhost\\:1302/audiobooks/:audiobookId', {},
     {update: {method: 'PUT'}}
   )
 

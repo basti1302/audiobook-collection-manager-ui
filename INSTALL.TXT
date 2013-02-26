@@ -15,8 +15,8 @@ Linux/Mac: Check https://github.com/joyent/node/wiki/Installing-Node.js-via-pack
 cd storra
 node index.js
 
---> 10 Jan 17:10:25 - [I] now listening on port 8888...
-http://localhost:8888/
+--> 10 Jan 17:10:25 - [I] now listening on port 1302...
+http://localhost:1302/
 
 in a new terminal:
 
