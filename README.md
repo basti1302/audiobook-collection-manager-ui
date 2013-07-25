@@ -14,19 +14,22 @@ This application is done in [AngularJS](http://angularjs.org/). It was created u
     * `cd path/to/storra`
     * `node lib/index.js`
     * This should result in output similar to this:
+
 ```shell
 2013-07-25T14:38:23.966Z - info: Now listening on port 1302.
 2013-07-25T14:38:23.966Z - debug: Bind address: 0.0.0.0
 2013-07-25T14:38:23.982Z - info: Startup took approximately 0 seconds (385 milliseconds, to be precise).
 ```
+
 * Start a web-server that serves the assets for the audiobook collection manager UI. You can pick one of these options:
     * serve the complete repository with a webserver of your choice (Apache, nginx, ...) or
     * use the Node.js-based web-server that is included in scripts directory. Since you have Node.js already installed, this is the most convenient option.
-        * `cd path/to/audiobook-collection-manager-ui/
+        * `cd path/to/audiobook-collection-manager-ui`
         * `node scripts/web-server.js`
         * This should result in output similar to this:
+
 ```
 Http Server running at http://localhost:8000/
 ```
 
-Then navigate your browser to `http://localhost:8000/app/index.html` to see the app running in your browser.
+Then navigate your browser to http://localhost:8000/app/index.html to see the app running in your browser.
