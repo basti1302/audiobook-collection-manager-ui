@@ -32,4 +32,4 @@ This application is done in [AngularJS](http://angularjs.org/). It was created u
 Http Server running at http://localhost:8000/
 ```
 
-Then navigate your browser to http://localhost:8000/app/index.html to see the app running in your browser.
+Then navigate your browser to [http://localhost:8000/app/index.html] to see the app running in your browser.
