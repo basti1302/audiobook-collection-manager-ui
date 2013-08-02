@@ -1,6 +1,12 @@
 # audio book collection manager UI
 
-This project is a sample application to showcase cucumber. This project itself does not contain any cucumber stuff. It only contains the web application that is to be tested by the cucumber features.
+This project is a sample application to showcase cucumber. This project itself does not contain any cucumber stuff. It only contains the web application that is to be tested by the cucumber features, can be found here: https://github.com/basti1302/audiobook-collection-manager-acceptance
+
+The tutorial that uses this application as the application under test can be found here:
+
+* Part I: http://blog.codecentric.de/en/2013/08/cucumber-setup-basics/
+* Part II: http://blog.codecentric.de/en/2013/08/cucumber-capybara-poltergeist/
+
 
 This application is done in [AngularJS](http://angularjs.org/). It was created using [angular-seed](https://github.com/angular/angular-seed).
 
